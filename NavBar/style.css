@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    padding :0 ; 
+    margin: 0 ;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+}
+.navbar .logo {
+    font-size: 50px;
+    color: white;
+    line-height: 50px;
+    padding-left: 20px;
+   
+}
+.navbar .logo:hover{
+    color:#66b3ff
+}
+.navbar .navmenu {
+    float: right;
+    padding-right: 50px;
+}
+.navbar .navmenu ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+.navbar .navmenu ul li a {
+    color : white;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    padding: 2px 3px;
+    font-weight: 500;
+    text-shadow: 5px 1px 1px black;
+
+}
+a.active,a:hover {
+    background: rgba(252, 252, 252, 0.322);
+    transition: .5s;
+}
+.navbar .navmenu ul li a:hover{
+    color: #66b3ff
+}
+
+.navbar section {
+    background: url(bg.jpeg); 
+    background-size: cover;
+    margin-top: -50px;
+    height: 100vh;
+}
+.navbar section p {
+    font-size: 100px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding-top: 15%;
+    padding-left: 50px;
+    text-shadow: 1px 2px 1px black;
+    
+}
+h1{
+  text-align: center;
+  background: #282828;
+  color: white;
+  padding: 15px 15px;
+}
+.navbar .aboutUs p{
+    background: #282828;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins';
+    padding-top: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: justify;
+}
+
+.navbar section .fade-in .text {
+    color:white;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30%;
+    text-align: justify;
+    text-shadow: 1px 2px 1px black;
+}
+
+
+.navbar section .fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+
