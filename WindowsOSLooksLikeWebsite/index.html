@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Windows OS Looks Like WebSite</title>
+</head>
+
+<body onload="startTime()">
+    <div class="mainWindow" id="mainWindow">
+        <div class="desktop" id="desktop">
+            <div class="desktopIcons">
+                <a href="https://code.visualstudio.com/"><img src="/assets/img/vscode.png" alt="" srcset=""></a>
+                <p id="img_des">Visual Studio Code</p>
+            </div>
+            <h1>Your Text</h1>
+            <div class="startMenu" id="startMenu">
+                THIS IS START
+            </div>
+        </div>
+        <div class="taskbar" id="taskbar">
+            <nav>
+                <div class="right">
+                    <button id="start-btn"></button>
+                    <button id="multi-btn"></button>
+                    <button id="folder-btn"></button>
+                    <button id="IE-btn"></button>
+                </div>
+
+                <div class="left">
+                    <button id="wifi-btn"></button>
+                    <p id="date">a</p>
+                </div>
+            </nav>
+
+        </div>
+        <div class="network" id="network"></div>
+        <div class="startmenu" id="startmenu"></div>
+    </div>
+
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('date').innerHTML =
+                h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+        $(document).ready(function () {
+            $('#start-btn').click(function () {
+                console.log("Clicked")
+                $('#startMenu').toggle();
+            })
+
+        })
+    </script>
+</body>
+
+</html>
